@@ -17,6 +17,7 @@ const Calculator = () => {
       setInput(eval(input).toString());
     } catch (error) {
       setInput("Error");
+      console.log(error);
     }
   };
 
