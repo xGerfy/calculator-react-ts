@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Calculator.css";
 
 const Calculator = () => {
   const [input, setInput] = useState<string>("");
@@ -21,6 +22,7 @@ const Calculator = () => {
 
   return (
     <div className="container">
+      <h1 style={{ color: "white", marginBottom: 50 }}>Калькулятор</h1>
       <div className="calculator">
         <div className="display">{input}</div>
         <div className="buttons">
